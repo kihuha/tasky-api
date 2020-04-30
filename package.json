@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "env-cmd -f dev.env nodemon src/index.js",
-    "test": "env-cmd -f test.env jest --detectOpenHandles --coverage"
+    "test": "env-cmd -f test.env jest --detectOpenHandles --coverage",
+    "test-CI": "jest --coverage"
   },
   "dependencies": {
     "env-cmd": "^10.1.0",
