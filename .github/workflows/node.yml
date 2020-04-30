@@ -23,7 +23,7 @@ jobs:
           mongodb-replica-set: insert-replica-set-name
 
       - run: yarn
-      - run: yarn test
+      - run: yarn test-CI
         env:
           CI: true
           PORT: 3000
