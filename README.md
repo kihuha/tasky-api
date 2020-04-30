@@ -1,6 +1,6 @@
 # Todo
 
-![Node.js CI](https://github.com/kihuha/todo/workflows/Node.js%20CI/badge.svg)
+![Todo Tests](https://github.com/kihuha/todo/workflows/Todo%20Tests/badge.svg)
 
 
 A tasks management application
