@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Todo Tests
 
 on: [push]
 
