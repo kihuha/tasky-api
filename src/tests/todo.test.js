@@ -1,6 +1,6 @@
 const request = require('supertest')
 const app = require('../app')
-const TodoModel = require('../data/model')
+const TodoModel = require('../data/TodoModel')
 
 describe("TODO", () => {
     let testData, todo;

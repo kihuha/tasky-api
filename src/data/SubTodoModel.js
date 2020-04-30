@@ -1,9 +1,9 @@
 const mongoose = require('mongoose')
-const {Schema, ObjectId, model} = mongoose
+const {Schema, model} = mongoose
 
-const TodoSchema = new Schema(
+const SubTodoSchema = new Schema(
     {
-        id: ObjectId,
+        parentTodo: String,
         title: {
             type: String,
             required: true
@@ -15,6 +15,6 @@ const TodoSchema = new Schema(
     }
 )
 
-const TodoModel = model('Todo', TodoSchema)
+const subTodoModel = new model('SubTodo', SubTodoSchema)
 
-module.exports = TodoModel
+module.exports = subTodoModel
