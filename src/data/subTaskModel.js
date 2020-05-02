@@ -1,9 +1,8 @@
 const mongoose = require('mongoose')
 const {Schema, model} = mongoose
 
-const SubTodoSchema = new Schema(
+const SubTaskSchema = new Schema(
     {
-        parentTodo: String,
         title: {
             type: String,
             required: true
@@ -11,10 +10,14 @@ const SubTodoSchema = new Schema(
         completed: {
             type: Boolean,
             default: false
+        },
+        task: {
+            type: Schema.Types.ObjectID,
+            required: true
         }
     }
 )
 
-const subTodoModel = new model('SubTodo', SubTodoSchema)
+const SubTaskModel = model('SubTask', SubTaskSchema)
 
-module.exports = subTodoModel
+module.exports = SubTaskModel

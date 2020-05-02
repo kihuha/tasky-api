@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const {Schema, model} = mongoose
 
-const TodoSchema = new Schema(
+const TaskSchema = new Schema(
     {
         title: {
             type: String,
@@ -14,6 +14,6 @@ const TodoSchema = new Schema(
     }
 )
 
-const TodoModel = model('Todo', TodoSchema)
+const TaskModel = model('Task', TaskSchema)
 
-module.exports = TodoModel
+module.exports = TaskModel

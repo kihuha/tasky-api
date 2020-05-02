@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
-const TodoRouter = require('./routes/todoRouter')
+const TaskRouter = require('./routes/taskRouter')
 app.use(express.json())
 
-app.use('/api/v1/todo', TodoRouter)
+app.use('/api/v1/tasks', TaskRouter)
 
 module.exports = app
