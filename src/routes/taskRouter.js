@@ -1,7 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const path  = require('path')
-const TaskModel = require(path.resolve(__dirname, '../data/TaskModel'))
+const TaskModel = require('../data/TaskModel')
 const SubTaskModel = require('../data/SubTaskModel')
 const validator = require('../utils/validator')
 require('../data/db')
