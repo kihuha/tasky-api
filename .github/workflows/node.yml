@@ -21,8 +21,8 @@ jobs:
         with:
           mongodb-version: ${{ matrix.mongodb-version }}
 
-      - run: npm
-      - run: npm run test-CI
+      - run: npm install
+      - run: npm test-CI
         env:
           CI: true
           PORT: 3000
