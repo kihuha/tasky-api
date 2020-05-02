@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "env-cmd -f dev.env nodemon src/index.js",
-    "test": "env-cmd -f test.env jest --coverage --forceExit",
-    "test-CI": "jest --coverage --forceExit --ci"
+    "test-local": "env-cmd -f test.env jest --coverage --forceExit",
+    "test": "jest --coverage --forceExit --ci"
   },
   "dependencies": {
     "env-cmd": "^10.1.0",
@@ -19,6 +19,9 @@
     "supertest": "^4.0.2"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "modulePaths": [
+      "<rootDir>/src"
+    ]
   }
 }

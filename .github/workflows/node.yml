@@ -1,4 +1,4 @@
-name: Todo Tests
+name: Tasky Tests
 
 on: [push]
 
@@ -21,9 +21,9 @@ jobs:
         with:
           mongodb-version: ${{ matrix.mongodb-version }}
 
-      - run: yarn
-      - run: yarn test-CI
+      - run: npm install
+      - run: npm test
         env:
           CI: true
           PORT: 3000
-          MONGO_URI: 'mongodb://127.0.0.1:27017/todos-test'
+          MONGO_URI: 'mongodb://127.0.0.1:27017/tasks-test'
