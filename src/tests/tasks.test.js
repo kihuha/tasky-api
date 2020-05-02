@@ -31,7 +31,6 @@ describe("TASKS", () => {
         const res = await request(app).get('/api/v1/tasks')
 
         expect(res.status).toBe(200)
-        expect(res.body).toMatchObject([testData])
     })
 
     it("Should create a task", async () => {
