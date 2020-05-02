@@ -1,7 +1,7 @@
 const request = require('supertest')
-const app = require('../app')
 const TaskModel = require('../data/taskModel')
 const SubTaskModel = require('../data/subTaskModel')
+const app = require('../app')
 
 describe("SUBTASKS", () => {
     let task, subTask, testData, testData2

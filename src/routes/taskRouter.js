@@ -1,9 +1,9 @@
 const express = require('express')
 const router = express.Router()
-require('../data/db')
 const TaskModel = require('../data/TaskModel')
 const SubTaskModel = require('../data/SubTaskModel')
 const validator = require('../utils/validator')
+require('../data/db')
 
 // TODOS
 router.get(
